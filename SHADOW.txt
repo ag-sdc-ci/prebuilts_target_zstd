@@ -1,0 +1,6 @@
+shadow prebuilt repo: zstd (target)
+  upstream: external/zstd
+  api-level: 34 (branch 34-20261016)
+  blobs: org.blisslabs.ag.ext.zstd.apex
+  dev-src: extracted extractive payload (libzstd.so, libzstd.a, zstd.h/zdict.h/zstd_errors.h headers, zstd binary) + root Android.bp
+  date: 2026-10-16

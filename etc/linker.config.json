@@ -1,0 +1,23 @@
+{
+	"provideLibs": [	
+		    "libdummy_binary_libzstd-x86_64-v2.so.so",
+		    "libdummy_binary_libzstd.a-x86_64-v2.so",
+		    "libdummy_binary_libzstd.a.so",
+		    "libdummy_binary_libzstd.so.so",
+		    "libdummy_binary_zstd-x86_64-v2.so",
+		    "libdummy_binary_zstd.so",
+		    "libdummy_ext_zstd-x86_64-v2.so",
+		    "libdummy_ext_zstd.so",
+		    "libdummy_headers_ext_zstd-x86_64-v2.so",
+		    "libdummy_headers_ext_zstd.so"
+	],
+	"requireLibs": [	
+		    "libc++_shared.so",
+		    "libc.so",
+		    "libdl.so",
+		    "liblz4.so.1",
+		    "libm.so",
+		    "libz.so"
+	],
+	"visible": true
+}

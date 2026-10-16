@@ -1,0 +1,63 @@
+// Auto-generated prebuilt Blueprint for external/zstd
+// Extracted from Extractive APEX package: org.blisslabs.ag.ext.zstd
+
+package {
+    default_applicable_licenses: ["external_zstd_license"],
+}
+
+license {
+    name: "external_zstd_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-BSD",
+    ],
+    license_text: [
+        "LICENSE",
+    ],
+}
+
+cc_library_headers {
+    name: "libzstd_headers",
+    vendor_available: true,
+    product_available: true,
+    recovery_available: true,
+    host_supported: true,
+    apex_available: [
+        "//apex_available:anyapex",
+        "//apex_available:platform",
+    ],
+    export_include_dirs: ["include"],
+}
+
+cc_prebuilt_library {
+    name: "libzstd",
+    vendor_available: true,
+    product_available: true,
+    recovery_available: true,
+    host_supported: true,
+    check_elf_files: false,
+    export_include_dirs: ["include"],
+    static: {
+        srcs: ["lib/libzstd.a"],
+    },
+    shared: {
+        srcs: ["lib/libzstd.so"],
+    },
+    prefer: true,
+    apex_available: [
+        "//apex_available:anyapex",
+        "//apex_available:platform",
+    ],
+    min_sdk_version: "29",
+}
+
+cc_prebuilt_binary {
+    name: "zstd",
+    vendor_available: true,
+    product_available: true,
+    recovery_available: true,
+    host_supported: true,
+    check_elf_files: false,
+    srcs: ["bin/zstd"],
+    prefer: true,
+}
